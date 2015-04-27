@@ -1,0 +1,31 @@
+.tile:nth-child(5n + 1) {
+  background-color: #9f1c19;
+  color: white; }
+
+.tile:nth-child(5n + 2) {
+  background-color: #65d1fb;
+  color: white; }
+
+.tile:nth-child(5n + 3) {
+  background-color: #05abeb;
+  color: white; }
+
+.tile:nth-child(5n + 4) {
+  background-color: #ff8500;
+  color: white; }
+
+.tile:nth-child(5n + 5) {
+  background-color: #ff241f;
+  color: white; }
+
+.tiles {
+  overflow: hidden; }
+
+.tile {
+  float: left;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 20px; }
+
+/*# sourceMappingURL=main.css.map */

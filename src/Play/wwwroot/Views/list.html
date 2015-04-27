@@ -1,0 +1,30 @@
+﻿<div>
+
+	<div class="tiles">
+		<div ng-repeat="song in songs" class="tile">{{song.Name}}</div>
+	</div>
+
+	<!--<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Name</th>
+				<th>Artist</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="song in songs">
+				<td>
+					<a href="/songs/edit/{{song.Name}}" class="btn btn-default btn-xs">edit</a>
+					<a href="/songs/delete/{{song.Name}}" class="btn btn-danger btn-xs">delete</a>
+				</td>
+				<td>{{song.Name}}</td>
+				<td>{{song.Artist}}</td>
+			</tr>
+		</tbody>
+	</table>-->
+
+	<p>
+		<a href="/songs/add" class="btn btn-primary">Add New Song</a>
+	</p>
+</div>

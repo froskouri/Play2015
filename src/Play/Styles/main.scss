@@ -1,0 +1,28 @@
+﻿
+$colour-map: rgb(159,28,25), rgb(101,209,251), rgb(5,171,235), rgb(255,133,0), rgb(255,36,31);
+
+
+@mixin set-colors() {
+	@each $color in $colour-map {
+		$i: index($colour-map, $color);
+
+		.tile:nth-child(#{length($colour-map)}n + #{$i}) {
+			background-color: $color;
+			color: white;
+		}
+	}
+}
+
+@include set-colors();
+
+.tiles {
+	overflow: hidden;
+}
+
+.tile {
+	float: left;
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 20px;
+}
